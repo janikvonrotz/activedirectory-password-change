@@ -1,0 +1,19 @@
+{
+  "name": "Passwortwechsel",
+  "version": "1.0.0",
+  "authors": [
+    "Janik von Rotz <contact@janikvonrotz.ch>"
+  ],
+  "description": "Passwortwechsel vbl",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.0"
+  }
+}
