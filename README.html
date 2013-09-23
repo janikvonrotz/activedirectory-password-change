@@ -1,11 +1,20 @@
 <h1>ActiveDirectory-Password-Change</h1>
-<p><img src="" alt="Git Update Task picture"></p>
+<p><img src="https://raw.github.com/janikvonrotz/ActiveDirectory-Password-Change/master/doc/screenshot.png" alt="Screenshot"></p>
 <ul>
-<li>Install dependencies with <a href="https://github.com/bower/bower">bower</a>.</li>
+<li>Install dependencies with <a href="https://github.com/bower/bower">bower</a></li>
+<li>Run a bower update in the project root</li>
+<li>Add an ActiveDirectory user who has the right to reset a user&#39;s password</li>
 <li>Set variables in <code>index.php</code><ul>
-<li><code>ldapuser</code></li>
-<li><code>ldappwd</code></li>
-<li><code>ldaphost</code></li>
+<li><code>$ldapuser</code></li>
+<li><code>$ldappwd</code></li>
+<li><code>$ldaphost</code></li>
+<li><code>$SecKey</code></li>
 </ul>
 </li>
+<li>Move the project on a webserver<ul>
+<li>Support for php ldap module must be enabled</li>
+<li>SSL certified when publish the site in the internet</li>
+</ul>
+</li>
+<li>Open the password change website like this <code>https://site.yourdomain.com/index.php?sec=[your secure key from $SecKey]</code></li>
 </ul>

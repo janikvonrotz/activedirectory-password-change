@@ -1,10 +1,17 @@
 ActiveDirectory-Password-Change
 ===============================
 
-![Git Update Task picture]()
+![Screenshot](https://raw.github.com/janikvonrotz/ActiveDirectory-Password-Change/master/doc/screenshot.png)
 
-* Install dependencies with [bower](https://github.com/bower/bower).
+* Install dependencies with [bower](https://github.com/bower/bower)
+* Run a bower update in the project root
+* Add an ActiveDirectory user who has the right to reset a user's password
 * Set variables in `index.php`
-	* `ldapuser`
-	* `ldappwd`
-	* `ldaphost`
+	* `$ldapuser`
+	* `$ldappwd`
+	* `$ldaphost`
+	* `$SecKey`
+* Move the project on a webserver
+	* Support for php ldap module must be enabled
+	* SSL certified when publish the site in the internet
+* Open the password change website like this `https://site.yourdomain.com/index.php?sec=[your secure key from $SecKey]`
