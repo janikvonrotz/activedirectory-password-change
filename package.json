@@ -19,7 +19,7 @@
     "url": "https://github.com/janikvonrotz/ActiveDirectory-Password-Change.git"
   },
   "author": "Janik von Rotz (http://janikvonrotz.ch)",
-  "license": "MIT",
+  "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/janikvonrotz/ActiveDirectory-Password-Change/issues"
   },
